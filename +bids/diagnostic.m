@@ -163,7 +163,7 @@ function [diagnostic_table, sub_ses, headers] = diagnostic(varargin)
 
   print_figure(output_path, fig_name);
 
-  if verbose
+  if ~verbose
     close(gcf);
   end
   %% events

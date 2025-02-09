@@ -65,6 +65,7 @@ function [data, headers, y_labels] = list_events(varargin)
   end
 
   trial_type_list = bids.internal.list_all_trial_types(BIDS, task, ...
+                                                       'trial_type_col',trial_type_col,...
                                                        'tolerant', true, 'verbose', true);
 
   if  isempty(trial_type_list)
